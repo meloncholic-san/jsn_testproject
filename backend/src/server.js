@@ -14,7 +14,7 @@ export async function setupServer() {
 
 
   app.use(cors({
-    origin: ['http://localhost:5173', 'https://todo.vercel.app'],
+    origin: ['http://localhost:5173', 'jsn-testproject.vercel.app'],
     credentials: true
   }));
 
