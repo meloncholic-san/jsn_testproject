@@ -38,12 +38,14 @@ export default function EditHeroModal({ hero, onClose, onSave }) {
 
   if (!hero) return null;
 
-  const handleDeleteImage = (public_id) => {
+    const handleDeleteImage = (public_id) => {
     setFormData((prev) => ({
-      ...prev,
-      imagesToDelete: [...prev.imagesToDelete, public_id],
+        ...prev,
+        imagesToDelete: prev.imagesToDelete.includes(public_id)
+        ? prev.imagesToDelete
+        : [...prev.imagesToDelete, public_id],
     }));
-  };
+    };
 
   const handleChange = (e) => {
     const { name, value, files } = e.target;

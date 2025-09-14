@@ -13,7 +13,7 @@ const storage = multer.diskStorage({
   },
 });
 
-const allowedExtensions = ['.jpg', '.jpeg', '.png', '.gif'];
+const allowedExtensions = ['.jpg', '.jpeg', '.png', '.gif', '.webp'];
 const allowedMimeTypes = [
   'image/jpeg',
   'image/png',

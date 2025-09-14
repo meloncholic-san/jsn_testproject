@@ -93,9 +93,9 @@ const handleSaveHero = (updatedHeroData) => {
     formData.append('images', file);
   });
 
-  updatedHeroData.imagesToDelete.forEach(id => {
+  if (updatedHeroData.imagesToDelete.length > 0) {
     formData.append('imagesToDelete', JSON.stringify(updatedHeroData.imagesToDelete));
-  });
+  }
 
   dispatch(updateSuperhero({ id: updatedHeroData._id, update: formData })).then(() => {
     setEditingHero(null);
