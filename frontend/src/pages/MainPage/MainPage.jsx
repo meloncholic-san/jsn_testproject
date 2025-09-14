@@ -35,7 +35,7 @@ export default function MainPage() {
 //Query params to redux state 
   useEffect(() => {
   const search = query.get('search') || '';
-  const sort = query.get('sort') || '';
+  const sort = query.get('sort') || 'nickname_asc';
   const page = query.get('page') || '';
   if (page && !isNaN(Number(page))) {
     dispatch(setPage(Number(page)));
