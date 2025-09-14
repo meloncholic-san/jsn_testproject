@@ -9,9 +9,9 @@ export const listSuperheroes = async ({ search, sort, page = 1, perPage = 5 }) =
     filter.$or = [
       { nickname: new RegExp(search, 'i') },
       { real_name: new RegExp(search, 'i') },
-      { origin_description: new RegExp(search, 'i') },
-      { superpowers: new RegExp(search, 'i') },
-      { catch_phrase: new RegExp(search, 'i') },
+      // { origin_description: new RegExp(search, 'i') },
+      // { superpowers: new RegExp(search, 'i') },
+      // { catch_phrase: new RegExp(search, 'i') },
     ];
   }
 
