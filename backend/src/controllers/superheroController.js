@@ -106,8 +106,25 @@ export const patchSuperhero = async (req, res) => {
 
 export const deleteSuperhero = async (req, res) => {
   const { id } = req.params;
+
+  const superhero = await getSuperheroById(id);
+  if (!superhero) {
+    return res.status(404).json({ message: 'Superhero not found' });
+  }
+
+  for (const image of superhero.images) {
+    if (image.public_id) {
+      try {
+        await deleteFromCloudinary(image.public_id);
+      } catch (error) {
+        console.error('Error deleting from Cloudinary:', error);
+      }
+    }
+  }
+
   await removeSuperhero(id);
-  res.status(204).send();
+
+  return res.status(204).send();
 };
 
 

@@ -71,14 +71,7 @@ export const removeSuperhero = async (id) => {
     throw createHttpError(404, "Superhero not found");
   }
 
-  for (const image of superhero.images) {
-    if (image.public_id) {
-      await deleteFromCloudinary(image.public_id);
-    }
-  }
-
   await superhero.deleteOne();
-  return;
 };
 
 export const getSuperheroById = async (id) => {
