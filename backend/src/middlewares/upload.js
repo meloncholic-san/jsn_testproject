@@ -19,6 +19,7 @@ const allowedMimeTypes = [
   'image/png',
   'image/gif',
   'text/plain',
+  'image/webp',
 ];
 
 const fileFilter = (req, file, cb) => {
