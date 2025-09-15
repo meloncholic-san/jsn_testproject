@@ -42,5 +42,5 @@ Fullstack-проєкт для керування супергероями.
 ## Розгортання
 - **Backend:** Render  
 - **Frontend:** Vercel  
-- **Жива сторінка:** [Versel](jsn-testproject.vercel.app)  
+- **Жива сторінка:** [Versel]: jsn-testproject.vercel.app
 - **Репозиторій:** [GitHub Repo](https://github.com/meloncholic-san/jsn_testproject)  
