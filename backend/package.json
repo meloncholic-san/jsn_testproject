@@ -1,7 +1,7 @@
 {
-  "name": "automaze_test_project",
+  "name": "jsn_test_project",
   "version": "1.0.0",
-  "description": "Automaze Junior Fullstack Developer test project",
+  "description": "JSN Junior Fullstack Developer test project",
   "main": "eslint.config.js",
   "type": "module",
   "scripts": {
