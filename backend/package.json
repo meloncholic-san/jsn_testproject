@@ -20,11 +20,9 @@
     "prettier": "^3.6.2"
   },
   "dependencies": {
-    "bcryptjs": "^3.0.2",
     "cloudinary": "^2.7.0",
     "http-errors": "^2.0.0",
     "joi": "^17.13.3",
-    "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.18.0",
     "multer": "^2.0.2"
   }
