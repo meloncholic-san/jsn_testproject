@@ -1,6 +1,7 @@
 # Superheroes! App  
 Fullstack-проєкт для керування супергероями.
-Тестове завдання для JavaScript Ninjas на позицію Trainee Fullstack Developer
+
+Тестове завдання для JavaScript Ninjas на позицію Trainee Fullstack Developer.
 
 ---
 
