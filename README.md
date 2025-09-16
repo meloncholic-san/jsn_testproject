@@ -38,10 +38,11 @@ Fullstack-проєкт для керування супергероями.
 - Фільтри + пошук + сортування  
 - Skeleton-лоадери і спінери  
 - Валідація форм (Formik + Yup)  
-- Збереження стану в Redux (persist)  
+- Збереження і керування станами в Redux
+- Обробка асинхронних запитів через createAsyncThunk з Redux Toolkit
 
 ## Розгортання
 - **Backend:** Render  
 - **Frontend:** Vercel  
-- **Жива сторінка:** [Versel]: jsn-testproject.vercel.app
+- **Жива сторінка Versel:** jsn-testproject.vercel.app
 - **Репозиторій:** [GitHub Repo](https://github.com/meloncholic-san/jsn_testproject)  
